@@ -12,6 +12,38 @@
     height: 15rem;
     width: 22.5%;
     border-radius: 25px 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.res h1 {
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+}
+.res input:nth-child(odd) {
+    position: absolute;
+    padding: 5%;
+    width: 80%;
+    top: 50%;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+.res input:nth-child(even) {
+    position: absolute;
+    padding: 5%;
+    width: 30%;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
 }
 .op {
     background-color: #18212a;
@@ -19,12 +51,51 @@
     height: 25rem;
     width: 22.5%;
     border-radius: 0 0 25px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+.col button {
+    background-color: transparent;
+    color: white;
+    font-size: 1.25rem;
+    border: none;
+}
+.operator {
+    background-color: white !important;
+    color: black !important;
+    border-radius: 50% !important;
+    width: 50%;
+    aspect-ratio: 1;
+}
+.result {
+    background-color: orange !important;
+    color: white !important;
+    border-radius: 50% !important;
+    width: 50%;
+    aspect-ratio: 1;
+}
+button:hover {
+    cursor: pointer;
 }
 .App-logo {
     height: 40vmin;
     pointer-events: none;
 }
-
+hr {
+    width: 22.5%;
+    margin: 0;
+    color: white;
+}
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;

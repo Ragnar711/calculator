@@ -33,6 +33,7 @@
     border: none;
     outline: none;
     color: white;
+    font-size: 1.5rem;
 }
 .res input:nth-child(even) {
     position: absolute;
@@ -44,6 +45,7 @@
     border: none;
     outline: none;
     color: white;
+    font-size: 1.5rem;
 }
 .op {
     background-color: #18212a;
